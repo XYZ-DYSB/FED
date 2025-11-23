@@ -1,0 +1,28 @@
+h1{
+    color:red;
+}
+
+h2{
+    color: blueviolet;
+
+}
+h3{
+    color: brown;
+}
+
+li{
+    color: greenyellow;
+}
+
+img{
+    padding-top : 50px;
+    padding-bottom: 100px;
+}
+body{
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+}
+
+p{
+    color: pink;
+    margin: 0px;
+}

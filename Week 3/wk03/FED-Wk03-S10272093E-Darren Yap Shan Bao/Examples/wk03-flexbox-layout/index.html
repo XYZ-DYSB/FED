@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      /* Container for the top section */
+      .top-section {
+        display: flex;
+        border: 2px solid red; /* Outer border */
+        padding: 10px;
+        margin-bottom: 15px;
+        gap: 15px; /* Space between image and content */
+      }
+
+      .image-box {
+        flex: 0 0 150px;
+        background-color: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #666;
+        border: 2px solid #00a0a0; /* Border for image box */
+      }
+
+      .content-box {
+        flex: 1;
+        border: 2px solid #00a0a0; /* Border for content box */
+        padding: 10px;
+      }
+
+      .content-box h2 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .content-box p {
+        margin: 5px 0;
+        color: #555;
+      }
+
+      .date {
+        text-align: right;
+        font-size: 12px;
+        color: #888;
+      }
+
+      /* Middle section */
+      .middle-section {
+        border: 2px solid red;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      /* Bottom section with three cards */
+      .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+      }
+
+      .card {
+        flex: 1;
+        border: 2px solid red;
+        text-align: center;
+        padding: 15px;
+      }
+
+      .card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      .card h3 {
+        margin: 5px 0;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Section -->
+    <div class="top-section">
+      <div class="image-box">
+        <span>Image</span>
+      </div>
+      <div class="content-box">
+        <div class="date">01/02/20</div>
+        <h2>Heading</h2>
+        <p>Sub heading goes here</p>
+        <p>
+          Bacon ipsum dolor amet brisket porchetta chislic pig boudin cupim
+          jerky beef bresaola andouille alcatra swine, burgdoggen tri-tip spare
+          ribs. Bresaola jerky rump, doner corned beef alcatra fatback chicken
+          capicola salami turke.
+        </p>
+      </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+      Bacon ipsum dolor amet brisket porchetta chislic pig boudin cupim jerky
+      beef bresaola andouille alcatra swine, burgdoggen tri-tip spare ribs.
+      Bresaola jerky rump, doner corned beef alcatra fatback chicken capicola
+      salami turkey frankfurter short ribs. Strip steak hamburger beef, chicken
+      kevin filet mignon ball tip. Prosciutto beef strip steak drumstick
+      hamburger, t-bone kevin sirloin burgdoggen.
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <div class="card">
+        rocket-icon.png
+        <h3>Heading</h3>
+        <p>Sub heading goes here</p>
+      </div>
+      <div class="card">
+        chart-icon.png
+        <h3>Heading</h3>
+        <p>Sub heading goes here</p>
+      </div>
+      <div class="card">
+        database-icon.png
+        <h3>Heading</h3>
+        <p>Sub heading goes here</p>
+      </div>
+    </div>
+  </body>
+</html>

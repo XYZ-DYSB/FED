@@ -1,0 +1,55 @@
+#product {
+    background: url(playstation-banner.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+}
+
+#exclusive {
+    width: 90%;
+    border-top: 1px solid #999999;
+    margin: 0 auto;
+}
+
+#exclusive p {
+    font-size: 1.2em;
+    color: #999999;
+    text-align: center;
+}
+
+.blue {
+    color: #3399cc;
+}
+
+h2 { 
+    font-size: 2em;
+    border-bottom: 1px solid #fff;
+    background: #222222;
+    margin: 0px;
+    padding: 20px 0;
+    font-weight: normal;
+}
+
+.feature {
+    width: 200px;
+    text-align: center;
+    color: #999999;
+    font-size: 11pt;
+}
+
+#top-features {
+    display: flex;
+    background: #222222;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.special {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

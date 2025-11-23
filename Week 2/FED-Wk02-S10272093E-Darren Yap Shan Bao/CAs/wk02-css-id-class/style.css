@@ -1,0 +1,13 @@
+#heading{
+    font-family: Arial;
+        background-color: red;
+        color: white;
+}
+
+.sports-history{
+    color: orange;
+}
+
+.computing-history{
+    color: green;
+}

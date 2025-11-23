@@ -1,0 +1,14 @@
+/* Refer to READMe.MD for CA writeup
+/* Complete the challenge by writing CSS below */
+
+.logo {
+    position: absolute;
+    top: -45px;
+    left: 125px;
+    /* top offset of -45px */
+    /* left offset of 125px */
+}
+
+.card {
+    position: relative;
+}
