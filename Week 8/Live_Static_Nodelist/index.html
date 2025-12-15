@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+1. Run the folder in VS Code using Live Server
+2. Look at how the JavaScript works for Live and Static nodelists (the different methods)
+3. Practice By Yourself:
+    - Create a HTML element that displays for the total amount of items in a container (i.e. The new element can have an ID of #items-count)
+        - Modify the JavaScript portion to display and update the HTML element every time the button is clicked
+        Hint: There is only 2 types of NodeLists available to use, choose the appropriate one for your total count, understand the code to know which one to use
+
+    - For the new 'item' added, change the number accordingly in JavaScript.
+        i.e. For the next item added, instead of "New Item", it should be "Item 3", so on and so forth.
+-->
+<html>
+  <head>
+    <title>Live vs Static NodeList Demo</title>
+    <style>
+      .item {
+        padding: 5px;
+        margin: 5px;
+        background: #e0e0ff;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Live vs Static NodeList Demo</h2>
+    <p>
+      Note that you need to inspect the website and look at the console tab to
+      see the JavaScript :-)
+    </p>
+
+    <div id="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+    </div>
+
+    <button id="addBtn">Click on me to add a new item!</button>
+
+    <script>
+      // Gets all HTML elements by the class of 'item'
+      // LIVE NodeList → HTMLCollection (updates automatically)
+      const liveList = document.getElementsByClassName("item"); // using getElements....
+
+      // STATIC NodeList → NodeList (does NOT update automatically)
+      const staticList = document.querySelectorAll(".item"); // using query....
+
+      console.log("Initial counts:");
+      console.log("Live:", liveList.length); // -> 2
+      console.log("Static:", staticList.length); // -> 2
+
+      document.getElementById("addBtn").addEventListener("click", () => {
+        // Add a new element to the page
+        const newDiv = document.createElement("div");
+        newDiv.className = "item";
+        newDiv.textContent = "New Item";
+        document.getElementById("container").appendChild(newDiv);
+
+        console.log("After adding new item:");
+        console.log("Live:", liveList.length); // LIVE list updates → increases
+        console.log("Static:", staticList.length); // STATIC list does NOT change
+      });
+    </script>
+  </body>
+</html>

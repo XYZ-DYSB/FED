@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Viewport meta tag ensures responsive design works on mobile devices -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap 5.3.3 CSS - Main Bootstrap stylesheet for styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom stylesheet for additional styling -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR: Bootstrap's responsive navigation component -->
+    <!-- navbar-expand-lg: Navbar collapses on screens smaller than large (lg) breakpoint -->
+    <!-- navbar-light: Light color scheme for the navbar -->
+    <!-- bg-light: Bootstrap utility class for light gray background -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- navbar-brand: Logo/brand text that stays visible -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- navbar-toggler: Hamburger menu button that appears on small screens -->
+        <!-- data-bs-toggle="collapse": Bootstrap JS directive to toggle content visibility -->
+        <!-- data-bs-target="#navbarSupportedContent": Specifies which element to toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- collapse navbar-collapse: Content that collapses/expands on small screens -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- navbar-nav: Bootstrap class for navbar menu list -->
+          <!-- ms-auto: Bootstrap utility for margin-start (right-align the menu) -->
+          <ul class="navbar-nav ms-auto">
+            <!-- nav-item: Individual navigation item -->
+            <!-- nav-link: Styling for navigation links -->
+            <!-- active: Bootstrap class to highlight current page -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <!-- DROPDOWN MENU: Bootstrap component for dropdown navigation -->
+            <!-- dropdown-toggle: Adds arrow icon and dropdown behavior -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <!-- dropdown-menu: Container for dropdown items -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <!-- dropdown-divider: Horizontal line separator -->
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <!-- Disabled link styling -->
+              <a class="nav-link disabled" href="#" aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <!-- d-flex: Bootstrap utility for flexbox display -->
+          <!-- role="search": Semantic HTML for search forms -->
+          <form class="d-flex" role="search">
+            <!-- form-control: Bootstrap class for input styling -->
+            <!-- me-2: Bootstrap utility for margin-end (right margin) -->
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <!-- btn: Base button class -->
+            <!-- btn-outline-success: Outlined button with success color -->
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mt-4: Bootstrap utility class for margin-top (4 * 0.25rem) -->
+    <h1 class="mt-4">Hello, world!</h1>
+
+    <!-- GRID SYSTEM: Bootstrap's 12-column responsive grid -->
+    <!-- container: Fixed-width responsive container with left/right margins -->
+    <div class="container">
+      <!-- row: Horizontal group of columns -->
+      <div class="row">
+        <!-- col: Equal-width column that stacks on mobile -->
+        <div class="col">Column 1</div>
+        <div class="col">Column 2</div>
+        <div class="col">
+          <!-- img-fluid: Bootstrap utility to make images responsive -->
+          <img
+            src="https://picsum.photos/1024/768"
+            class="img-fluid"
+            alt="Responsive image"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end container-->
+
+    <!-- FORM: Bootstrap form components with proper spacing -->
+    <!-- mt-4: Margin-top utility for spacing from elements above -->
+    <div class="container mt-4">
+      <form>
+        <!-- mb-3: Margin-bottom for spacing between form groups -->
+        <div class="mb-3">
+          <!-- form-label: Bootstrap styling for form labels -->
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <!-- form-control: Bootstrap class for input field styling and focus states -->
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <!-- form-text: Helper text below input fields -->
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <!-- Password input group with same spacing -->
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+
+        <!-- CHECKBOX: Bootstrap form-check components for proper spacing and alignment -->
+        <!-- form-check: Container for checkbox with proper styling -->
+        <!-- form-check-input: Checkbox input styling -->
+        <!-- form-check-label: Label styling aligned with checkbox -->
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+
+        <!-- BUTTON: Bootstrap button component -->
+        <!-- btn: Base button class -->
+        <!-- btn-primary: Primary color button style -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- end form container -->
+
+    <!-- Bootstrap 5.3.3 JS Bundle - Includes Bootstrap components functionality -->
+    <!-- Must be loaded before custom scripts that use Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript file for additional functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>

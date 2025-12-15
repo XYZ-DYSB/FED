@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interactive Chart Dashboard</title>
+    <!-- Chart.js 4.4.1 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Main container with flexbox layout -->
+    <div class="container">
+      <!-- Controls section: left panel with form and buttons -->
+      <div class="controls">
+        <h2>Let's do some charts</h2>
+
+        <!-- Form for adding custom amount -->
+        <form id="frmAmt">
+          <label for="txtAmt">Amount:</label>
+          <input
+            type="text"
+            name="txtAmt"
+            id="txtAmt"
+            placeholder="Enter amount"
+          />
+          <input type="submit" value="Add Amt" id="btnSubmit" />
+        </form>
+
+        <!-- Chart manipulation buttons -->
+        <button id="addDataset">Add Data</button>
+        <button id="lineChart">Change to Line Chart</button>
+        <button id="barChart">Change to Bar Chart</button>
+        <button id="donutChart">Change to Donut Chart</button>
+        <button id="showFirst">Show first 7</button>
+        <button id="showAll">Show All</button>
+      </div>
+
+      <!-- Chart section: right panel with canvas -->
+      <div class="chart-section">
+        <div class="chart-container">
+          <!-- Canvas element for Chart.js to render the chart -->
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JavaScript file for chart functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>

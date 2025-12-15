@@ -1,0 +1,2 @@
+/* have borders for any columns created */
+div[class^='col']{border: 1px solid red;}
